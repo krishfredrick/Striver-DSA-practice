@@ -13,16 +13,11 @@ public class Prime {
       }
     }
     private static boolean prime(int number){
-        boolean arr [] = new boolean [number];
-        for(int i = 2; i< arr.length; i++){
-
-            if(!arr[i]){
-                for (int j = i; j < arr.length; j*=i) {
-                    arr[j] = true;
-                }
-
+        for(int i = 2 ; i*i < number;i++){
+            if(number % i == 0){
+                return false;
             }
         }
-        return false;
+        return true;
     }
 }
