@@ -3,7 +3,7 @@ package Day3_04_09.Sort.Alogrithm;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SortWithRecursion {
+public class MergeSort {
     public static void main(String[] args) {
         Scanner in  = new Scanner(System.in);
         int number = in.nextInt();
